@@ -69,6 +69,7 @@ class Solution {
         while(n-->0){
             check=s.next();
             if(check.charAt(0)=='E'){
+                //take the input of name,cgpa,id
                 name=s.next();
                 cgpa=s.nextDouble();
                 id=s.nextInt();
@@ -76,8 +77,9 @@ class Solution {
                 pq.add(st);
                 
             }else{
+                //delete the student from priority queue
                 Student st2=pq.remove();
-                //System.out.println(st2.getName());
+               
             }
         }
     //print Empty if PriorityQueue is empty
